@@ -1,8 +1,8 @@
 # npmtest-react-google-maps
 
-test coverage for  [react-google-maps (v4.11.0)](https://tomchentw.github.io/react-google-maps/)  [![npm package](https://img.shields.io/npm/v/npmtest-react-google-maps.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-google-maps) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-google-maps.svg)](https://travis-ci.org/npmtest/node-npmtest-react-google-maps)
+#### basic test coverage for  [react-google-maps (v6.3.0)](https://tomchentw.github.io/react-google-maps/)  [![npm package](https://img.shields.io/npm/v/npmtest-react-google-maps.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-google-maps) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-google-maps.svg)](https://travis-ci.org/npmtest/node-npmtest-react-google-maps)
 
-React.js Google Maps integration component
+#### React.js Google Maps integration component
 
 [![NPM](https://nodei.co/npm/react-google-maps.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-google-maps)
 
@@ -10,7 +10,7 @@ React.js Google Maps integration component
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-google-maps/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-react-google-maps/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-react-google-maps/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-react-google-maps/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-google-maps/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-google-maps/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-react-google-maps/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-react-google-maps/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-google-maps/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-google-maps/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-react-google-maps/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-react-google-maps/build/coverage.html/index.html)
 
@@ -42,55 +42,68 @@ React.js Google Maps integration component
     "bugs": {
         "url": "https://github.com/tomchentw/react-google-maps/issues"
     },
-    "config": {
-        "mocha": "--compilers js:babel/register ./src/__tests__/*.spec.js ./src/**/__tests__/*.spec.js --require ./src/__tests__/__setup__.js"
-    },
-    "contributors": [
-        {
-            "name": "tomchentw",
-            "url": "https://github.com/tomchentw"
-        }
-    ],
     "dependencies": {
+        "babel-runtime": "^6.11.6",
         "can-use-dom": "^0.1.0",
         "google-maps-infobox": "^1.1.13",
-        "invariant": "^2.1.1",
-        "lodash.isequal": "^3.0.4",
+        "invariant": "^2.2.1",
+        "lodash": "^4.16.2",
         "marker-clusterer-plus": "^2.1.4",
-        "react-prop-types-element-of-type": "^2.1.0",
+        "react-display-name": "^0.2.0",
+        "react-prop-types-element-of-type": "^2.2.0",
         "scriptjs": "^2.5.8",
-        "warning": "^2.1.0"
+        "warning": "^3.0.0"
     },
     "description": "React.js Google Maps integration component",
     "devDependencies": {
-        "babel": "^5.8.23",
-        "babel-core": "^5.8.25",
-        "babel-eslint": "^4.1.3",
-        "codeclimate-test-reporter": "^0.1.1",
-        "eslint": "^1.10.3",
-        "eslint-config-airbnb": "^2.1.1",
-        "eslint-plugin-react": "^3.12.0",
-        "expect": "^1.12.1",
-        "isparta": "^3.1.0",
-        "istanbul": "^0.3.22",
-        "jsdom": "^7.0.2",
-        "mocha": "^2.3.3",
-        "react": "^0.14.0",
-        "react-dom": "^0.14.0",
-        "rimraf": "^2.4.3",
-        "tomchentw-npm-dev": "^3.1.0"
+        "babel-cli": "^6.16.0",
+        "babel-core": "^6.16.0",
+        "babel-eslint": "^7.2.2",
+        "babel-plugin-lodash": "^3.2.9",
+        "babel-plugin-transform-flow-comments": "^6.8.0",
+        "babel-plugin-transform-runtime": "^6.15.0",
+        "babel-plugin-typecheck": "^3.9.0",
+        "babel-preset-es2015": "^6.16.0",
+        "babel-preset-react": "^6.16.0",
+        "babel-preset-stage-0": "^6.16.0",
+        "codeclimate-test-reporter": "^0.4.1",
+        "cross-env": "^4.0.0",
+        "eslint": "^3.19.0",
+        "eslint-config-react-app": "^0.6.2",
+        "eslint-plugin-flowtype": "^2.32.1",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-jsx-a11y": "^4.0.0",
+        "eslint-plugin-react": "^6.10.3",
+        "history": "^2.1.2",
+        "isomorphic-fetch": "^2.2.1",
+        "prismjs": "^1.5.1",
+        "raf": "^3.3.0",
+        "raw-loader": "^0.5.1",
+        "react": "^15.0.0",
+        "react-bootstrap": "^0.30.3",
+        "react-dom": "^15.0.0",
+        "react-github-fork-ribbon": "^0.4.4",
+        "react-helmet": "^3.1.0",
+        "react-icons": "^2.2.1",
+        "react-prism": "^4.0.0",
+        "react-router": "^2.8.1",
+        "react-router-bootstrap": "^0.23.1",
+        "react-scripts": "^0.9.5",
+        "react-toastr": "^2.8.1",
+        "rimraf": "^2.5.4",
+        "standard-version": "^4.0.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "077a7d937685b5ff359d0b6ebb54505adec68712",
-        "tarball": "https://registry.npmjs.org/react-google-maps/-/react-google-maps-4.11.0.tgz"
+        "shasum": "ba7e0b3c2a3ad15ebdff55ecfe8c17a1c9cd8a6b",
+        "tarball": "https://registry.npmjs.org/react-google-maps/-/react-google-maps-6.3.0.tgz"
     },
     "files": [
         "lib/",
-        "src/",
+        "src/lib",
         "CHANGELOG.md"
     ],
-    "gitHead": "472e29ca95d97672b72f34dc2074adc70461d4f0",
+    "gitHead": "79b3f470bf0e8fd5aa79ca24680e24384d97b66d",
     "homepage": "https://tomchentw.github.io/react-google-maps/",
     "keywords": [
         "React.js",
@@ -107,7 +120,7 @@ React.js Google Maps integration component
         "google-maps",
         "google map",
         "google maps",
-        "GoogleMapsMixin",
+        "HeatmapLayer",
         "Map",
         "Marker",
         "Polyline",
@@ -115,7 +128,8 @@ React.js Google Maps integration component
         "Circle",
         "Directions",
         "InfoWindow",
-        "SearchBox"
+        "SearchBox",
+        "TrafficLayer"
     ],
     "license": "MIT",
     "main": "lib/index.js",
@@ -127,26 +141,33 @@ React.js Google Maps integration component
     "name": "react-google-maps",
     "optionalDependencies": {},
     "peerDependencies": {
-        "react": "^0.14.0 || ^15.0.0",
-        "react-dom": "^0.14.0 || ^15.0.0"
+        "react": "^15.0.0",
+        "react-dom": "^15.0.0"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/tomchentw/react-google-maps.git"
     },
     "scripts": {
-        "build": "babel src --out-dir lib",
-        "build:watch": "npm run build -- --watch",
+        "build:app": "react-scripts build",
+        "build:lib": "cross-env NODE_ENV=production babel src/lib --out-dir lib",
         "clean": "rimraf lib",
-        "lint": "eslint .",
-        "prebuild": "npm run lint && npm run clean",
+        "commit:app": "git add -A && git commit -m 'docs: compile from src/app with react-scripts'",
+        "commit:lib": "git add -A && git commit -m 'chore(lib): compile from src/lib using babel'",
+        "eject": "react-scripts eject",
+        "lint": "cross-env NODE_ENV=test eslint .",
+        "prebuild:lib": "npm run lint && npm run clean",
+        "precommit:app": "npm run build:app",
+        "precommit:lib": "npm run build:lib",
+        "prerelease": "npm run commit:lib && npm run commit:app",
         "pretest": "npm run lint",
-        "pretest:cov": "npm run lint",
-        "test": "mocha $npm_package_config_mocha",
-        "test:cov": "babel-node ./node_modules/.bin/isparta cover --report lcov _mocha -- $npm_package_config_mocha",
-        "test:watch": "npm test -- --watch"
+        "release": "standard-version",
+        "start": "react-scripts start",
+        "test": "react-scripts test --env=jsdom",
+        "test:once": "cross-env CI=true npm test"
     },
-    "version": "4.11.0"
+    "version": "6.3.0",
+    "bin": {}
 }
 ```
 
